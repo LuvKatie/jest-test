@@ -1,3 +1,4 @@
 # Introduction to Jest
 
-- Testing Jest for the first time
+- Jest Testing project from The Odin Project
+- Babel

@@ -2,4 +2,11 @@ function sum(a, b) {
     return a + b;
 }
 
-module.exports = sum;
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+module.exports = {
+    sum,
+    capitalize,
+}
