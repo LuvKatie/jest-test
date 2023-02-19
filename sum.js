@@ -31,9 +31,37 @@ const calculator = {
     }
 }
 
+let caesarStr = "";
+
+function caesarCipher(str) {
+    let newStr = str.split("");
+
+    for (let i = 0; i < 27; i++) {
+        let random = Math.floor(Math.random() * newStr.length);
+        let random2 = Math.floor(Math.random() * newStr.length);
+        let randomChar1 = newStr[random];
+        let randomChar2 = newStr[random2];
+
+        if(randomChar1 == randomChar2) {
+            continue;
+        } else {
+            newStr[random] = randomChar2;
+            newStr[random2] = randomChar1;
+        }
+    }
+    caesarStr = newStr.join();
+    checkCaesar(newStr.join());
+}
+
+function checkCaesar(str) {
+    str == caesarStr ? str : false;
+}
+
 module.exports = {
     sum,
     capitalize,
     reverse,
     calculator,
+    caesarCipher,
+    checkCaesar
 }

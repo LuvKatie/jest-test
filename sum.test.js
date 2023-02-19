@@ -1,4 +1,4 @@
-const {sum, capitalize, reverse, calculator,} = require('./sum');
+const {sum, capitalize, reverse, calculator, caesarCipher, checkCaesar} = require('./sum');
 // const capitalize = sum.capitalize;
 
 test('adds 1 + 2 to equal 3', () => {
@@ -29,6 +29,9 @@ test('Calculator multiply two integers', () => {
   expect(calculator.multiply(6, 2)).toBe(12);
 });
 
+test('Caesar Cipher on a String', () => {
+  expect(caesarCipher("Hello to the world! Pleased to meet you, everybody.")).toBe(checkCaesar());
+});
 // test('two plus two is four', () => {
 //     expect(2 + 2).toBe(4);
 //   });
