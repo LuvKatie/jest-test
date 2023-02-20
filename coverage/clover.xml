@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676802532645" clover="3.2.0">
-  <project timestamp="1676802532646" name="All files">
-    <metrics statements="27" coveredstatements="27" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9" elements="40" coveredelements="40" complexity="0" loc="27" ncloc="27" packages="1" files="1" classes="1"/>
+<coverage generated="1676852317955" clover="3.2.0">
+  <project timestamp="1676852317956" name="All files">
+    <metrics statements="36" coveredstatements="36" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12" elements="54" coveredelements="54" complexity="0" loc="36" ncloc="36" packages="1" files="1" classes="1"/>
     <file name="sum.js" path="/home/tony/repos/jest-test/sum.js">
-      <metrics statements="27" coveredstatements="27" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
+      <metrics statements="36" coveredstatements="36" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
       <line num="2" count="1" type="stmt"/>
       <line num="6" count="1" type="stmt"/>
       <line num="10" count="1" type="stmt"/>
@@ -31,6 +31,15 @@
       <line num="53" count="1" type="stmt"/>
       <line num="57" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="60" count="1" type="stmt"/>
+      <line num="64" count="4" type="stmt"/>
+      <line num="65" count="27" type="cond" truecount="2" falsecount="0"/>
+      <line num="66" count="21" type="stmt"/>
+      <line num="68" count="6" type="stmt"/>
+      <line num="72" count="4" type="stmt"/>
+      <line num="74" count="4" type="stmt"/>
+      <line num="75" count="24" type="stmt"/>
+      <line num="78" count="4" type="stmt"/>
+      <line num="87" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

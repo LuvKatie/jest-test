@@ -57,11 +57,40 @@ function checkCaesar(str) {
     str == caesarStr ? str : false;
 }
 
+const order = [1,8,3,4,2,6];
+
+function analyzeArray(arr) {
+
+    arr.sort((a, b) => {
+        if (a > b) {
+            return 1
+        } else {
+            return -1
+        }
+    })
+
+    let sum = 0;
+
+    arr.forEach(value => {
+        sum += value;
+    })
+
+    return {
+        average: sum / arr.length,
+        min: arr.at(0),
+        max: arr.at(-1),
+        length: arr.length
+    }
+}
+
+
 module.exports = {
     sum,
     capitalize,
     reverse,
     calculator,
     caesarCipher,
-    checkCaesar
+    checkCaesar,
+    analyzeArray,
+    order
 }
